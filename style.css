@@ -1,0 +1,476 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.total {
+  margin: 0px;
+  background-color: #222;
+  color: #fc1;
+}
+
+.list-option {
+  background-color: #111;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  align-items: stretch;
+  z-index: 3;
+}
+.list {
+  display: flex;
+  flex-grow: 2;
+  padding-right: 20px;
+}
+.menu-icon {
+  display: none;
+}
+
+.list-option div a {
+  margin: 18px;
+  color: #fc1;
+  text-decoration: none;
+  flex-basis: 300px;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 800;
+  padding: 15px 0px;
+  text-align: center;
+  width: 100px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.list-option div a:hover {
+  background-color: #222;
+}
+.main-icon {
+  font-size: xx-large;
+  flex-basis: 100px;
+  flex-grow: 3;
+  text-align: center;
+  font-weight: 800;
+  width: 80px;
+}
+
+#m1 {
+  margin-left: 20%;
+  top: 10px;
+  width: 100px;
+  padding: 10px;
+  position: relative;
+  animation-duration: 5s;
+  animation-name: example;
+  animation-iteration-count: 1;
+  transition: transform 2s;
+  /* background-color: burlywood; */
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+  }
+  10% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    left: 50%;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 0px;
+    transform: rotate(720deg);
+  }
+}
+
+.list-option .main-icon a:hover {
+  background-color: black;
+}
+.main-box {
+  padding: 0px 20px;
+}
+.first-item {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  margin: 100px 0px;
+  justify-content: space-around;
+}
+
+.text {
+  flex-basis: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.text p {
+  color: #777;
+  font-size: 2em;
+  padding: 3px;
+}
+.text h1 {
+  font-size: 3em;
+}
+.text a {
+  color: #222;
+  background-color: #fc1;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 7px 15px;
+  text-align: center;
+  border-radius: 25px;
+  width: 200px;
+}
+.main-image {
+  flex-basis: 500px;
+  margin-top: 100px;
+  /* height: 400px;
+  max-width: 500px;
+  background-color: #fc1; */
+  /* clip-path: circle(50% at 50% 50%); */
+  /* background-image: url(./face.png); */
+  border: none;
+  /* background-size: 700px; */
+  
+}
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.list-icon img {
+  max-width: 100px;
+  height: 70px;
+}
+.aboutMe-box {
+  /* position: relative; */
+  padding: 0px 80px;
+}
+.title h1 {
+  color: rgba(150, 150, 150, 0.3);
+  font-size: 150px;
+}
+.title h2 {
+  color: rgb(214, 214, 214);
+  font-size: 3em;
+  max-width: 100%;
+  text-align: end;
+  margin-top: -50px;
+  padding-right: 20%;
+}
+.vote-me {
+  display: none;
+}
+@media (max-width: 979px) {
+  .title h1 {
+    font-size: 8em;
+  }
+  .title h2 {
+    font-size: 50px;
+  }
+  .wave {
+    margin-top: 20px;
+  }
+  .wave2 {
+    height: 200px;
+  }
+}
+@media (max-width: 810px) {
+  .wave {
+    margin-top: 40px;
+  }
+  .title h1 {
+    font-size: 80px;
+  }
+  .title h2 {
+    font-size: 35px;
+    margin-top: -35px;
+  }
+  .list {
+    transition: display 0.5s;
+    display: none;
+  }
+  .list-option div a {
+    margin: 0px;
+    color: #fc1;
+    text-decoration: none;
+    flex-basis: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 800;
+    padding: 15px 30px;
+    text-align: center;
+    width: 100px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  #m1 {
+    margin-left: 20%;
+    top: 0px;
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    animation-duration: 5s;
+    animation-name: example;
+    animation-iteration-count: 1;
+    transition: transform 2s;
+    /* background-color: burlywood; */
+  }
+  .menu-icon {
+    display: inline;
+    flex-grow: 0.5;
+  }
+
+  .list-option {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+  }
+  .first-item {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+  .text {
+    display: inline-block !important;
+  }
+  .text a {
+    display: none;
+  }
+  .vote-me {
+    display: inline;
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fc1;
+    font-weight: 600;
+    animation: buttonvote infinite 5s;
+  }
+  .content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+@keyframes buttonvote {
+  0% {
+    background-color: #fc1;
+  }
+  50% {
+    background-color: #f71;
+  }
+}
+div .list-appear {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.sub {
+  margin-top: 50px;
+  z-index: 1000;
+}
+
+.list1 {
+  display: none;
+}
+.list-appear a {
+  color: #fc1;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: start;
+  padding: 15px 20px;
+  transition: background-color 0.5s;
+  text-align: center;
+  background-color: #222;
+}
+
+.list1 a:hover {
+  background-color: #555;
+}
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  max-height: 800px;
+  justify-content: space-evenly;
+}
+.content img {
+  background-color: sandybrown;
+  flex-basis: 700px;
+  margin-right: 50px;
+}
+.content div {
+  flex-basis: 400px;
+  flex-grow: 1;
+  color: rgba(170, 170, 170, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+  max-height: max-content;
+}
+.content div button {
+  background-color: #fc1;
+  padding: 18px 40px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  width: 250px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.skill-box {
+  padding: 80px 80px;
+}
+.skill-box .title h1 {
+  color: rgba(100, 100, 100, 0.05);
+}
+.skill-box .title h2 {
+  max-width: 100%;
+  text-align: start;
+  padding-left: 100px;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding-top: 50px;
+}
+.skill div {
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
+
+.contact-box {
+  padding: 0px 80px;
+  max-height: 800px;
+}
+#differ {
+  max-width: 100%;
+  text-align: start;
+  padding-left: 20px;
+}
+.contact-item {
+  display: flex;
+  max-height: 600px;
+  justify-content: space-evenly;
+  margin: 30px 100px;
+  text-align: center;
+}
+.input-item {
+  height: 450px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 800px;
+  flex-grow: 1;
+  text-align: center;
+
+  /* align-items: center; */
+}
+.input-item p {
+  font-size: 25px;
+}
+.input-item input {
+  background-color: #111;
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  color: #fff;
+}
+.input-item .big-input {
+  height: 220px;
+}
+.infor-contact {
+  flex-basis: 700px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.infor-contact div {
+  align-items: stretch;
+}
+.infor-contact div i {
+  text-align: center;
+  padding: 10px 0px;
+}
+.send {
+  width: 200px;
+  padding: 18px;
+  border-radius: 30px;
+  background-color: #fc1;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 32%;
+}
+.wave {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  z-index: 1;
+}
+.end {
+  width: 100%;
+  position: relative;
+  padding: 70px 0px 15px 0px;
+}
+.end-text {
+  position: relative;
+  text-align: center;
+  font-size: xx-large;
+  text-transform: uppercase;
+  z-index: 1000;
+  color: #111;
+}
+.wave2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+@media (max-width: 380px) {
+  .wave {
+    margin-top: 50px;
+  }
+  .wave2 {
+    height: 250px;
+    /* width: 380px; */
+  }
+  .main-image {
+    height: 300px;
+    max-width: 300px;
+  }
+  .list-icon {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 300px;
+  }
+}
+.fab {
+  color: #fc1;
+  font-size: 50px;
+  transition: 0.5s;
+}
+.fab:hover {
+  color:#FFEBA7;
+  transform: scale(1.2);
+}
